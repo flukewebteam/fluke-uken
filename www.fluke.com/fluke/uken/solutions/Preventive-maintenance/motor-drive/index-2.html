@@ -1,0 +1,563 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<!-- Mirrored from www.fluke.com/fluke/uken/solutions/Preventive-maintenance/motor-drive.htm?wbc_purpose=basic by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Jun 2017 18:30:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="_ctl0_Head1"><meta name="ROBOTS" content="FOLLOW,INDEX">
+<meta http-equiv="Content-Language" content="en-uk"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />      
+    
+<meta name="keywords" content=""/>
+<meta name="description" content="Download your free copy of the e-book Costs of poor power quality to identify problem areas and implement appropriate solutions."/>
+<meta name="MainCategory" content="webpages"/>
+
+
+    
+    <!-- CSS INCLUDE AREA START -->
+    <link rel="stylesheet" type="text/css" href="http://www.fluke.com/Fluke_www/CSS/fluke_css.css" title="cssMainStyle" />
+    <!-- CSS INCLUDE AREA END -->
+    
+    <!--URL ICON ADD START-->
+    <link rel="SHORTCUT ICON" href="http://www.fluke.com/Fluke_www/images/fluke/web2_0/favicon/favicon.ico" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.fluke.com/Fluke_www/images/fluke/web2_0/favicon/favicon.ico" />
+    <!--URL ICON ADD END-->
+    
+    <!-- JAVA SCRIPT INCLUDE AREA STARTS -->
+    <script type="text/javascript" language="javascript" src="http://www.fluke.com/Fluke_www/js_scripts/swfobject.js"></script>
+    <script type="text/javascript" language="javascript" src="http://www.fluke.com/Fluke_www/js_scripts/flashdetect.js"></script>
+    <script type="text/javascript" language="javascript" src="http://www.fluke.com/Fluke_www/js_scripts/Fluke_scripts.js"></script>
+    <!-- JAVA SCRIPT INCLUDE AREA END -->    
+    <div style="display: none;">
+    <!-- Google Async Code starts -->
+    <!-- Google Async Code starts --><script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-3420170-1']); _gaq.push(['_setDomainName', 'fluke.com']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script><!-- Google Async Code ends -->
+    <!-- Google Async Code ends -->
+    <!-- Eloqua Code starts -->
+    
+ <!-- BEGIN E10 Tracking Code starts -->
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://assets.fluke.com/eloqua/scripts/elqAsyncTrack.js'></SCRIPT>
+ <!-- END E10 Tracking Code end -->
+    <!-- Eloqua Code end -->
+    </div>
+    
+    <div style="display: none;">
+    <!-- Clickpath Code starts -->
+    
+    <!-- Clickpath Code end -->
+    
+    </div>    
+<title>
+	Analyzing and troubleshooting
+</title></head>
+<body id="_ctl0_BlankMasterBody" onload="" style="margin: 0;background-color:background-repeat: no-repeat; background-attachment: fixed; background-position: center top; background-image: url(http://www.fluke.com/fluke_www/images/fluke/Web2_0/background/fluke_grunge_bg_1600px_v6.jpg); margin: 0px; padding: 0px; text-align:center; background-color: black; ;">
+    <!-- Custom Code starts -->
+    <!-- ClickTale Top part --><!-- ClickTale Top part --><script type="text/javascript">var WRInitTime=(new Date()).getTime();</script><!-- ClickTale end of Top part -->
+    <!-- Custom Code ends -->
+    <form name="aspnetForm" method="post" action="http://www.fluke.com/fluke/uken/solutions/Preventive-maintenance/motor-drive.htm?wbc_purpose=basic" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjAwMzIxMjc3MWRk9KjPwPLk/3rzrsURJUE9WsA5ibc=" />
+
+
+<script language="javascript" type="text/javascript">
+<!--
+   var __CMS_PostbackForm = document.forms['aspnetForm'];
+   var __CMS_CurrentUrl = "http://www.fluke.com/fluke_www/Templates/Generic/LP2.aspx?NRMODE=Published&amp;NRNODEGUID=%7b4DFF0C8D-8522-4C93-8AA8-D90373A6AD38%7d&amp;NRORIGINALURL=%2ffluke%2fuken%2fsolutions%2fPreventive-maintenance%2fmotor-drive%2ehtm%3fwbc_purpose%3dbasic&amp;NRCACHEHINT=Guest&amp;wbc_purpose=basic";
+// -->
+</script>
+
+   
+                
+        
+        
+<style>
+/************ Email Workflow **************/
+.clsEmailWorkflow
+{
+	position:absolute;
+	top:175px;
+	left:75px;
+	background-color: #ffffff;
+	border-color: #000000;
+	border: 3px;
+	padding: 8px;
+	width: 390px;
+	font-family:arial;
+	font-size: 11px;
+	color: #ffffff;
+	z-index: 99;
+}
+.CloseWorkflow
+{
+	background-color: #ffffff;
+	padding: 5px;
+	float: right;
+	font-family:arial;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: pointer;
+	color: #000000;
+	margin-left: 15px;
+}
+</style>
+<script language="javascript" type="text/javascript">
+function textCounter( field,maxlimit )
+ {
+ var strvalue;
+	if ( field.value.length > maxlimit )
+	
+	{	
+		strvalue=field.value.substring( 0, maxlimit);
+		field.value = strvalue;
+		alert( 'Comments can only be 300 characters in length.');
+		return false;
+	}
+	  
+ }
+function fnValidate(EditorCtrl,ChkBoxCtrl)
+{
+    var objEditorList;
+    var objChkBox;
+
+    objEditorList = document.getElementById(EditorCtrl);
+    objChkBox = document.getElementById(ChkBoxCtrl);
+    //alert(objEditorList.value);
+    //alert(objChkBox.checked);
+    if ((objEditorList.value == "") && (objChkBox.checked == false))
+    {
+	    alert("Please Select one of the either mail recipients OR Don't Send email Checkbox ");
+	    return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+</script>
+
+
+
+        
+        <table cellpadding="0" id="tblParent" border="0" cellspacing="0" width="990px" align="center">
+        
+        <!-- Presentation mode to display live site content -->
+         
+            <tr>
+                <td style="width: 990px" valign="top" colspan="3">
+                    <table  style="width: 990px; border-collapse: collapse;" cellpadding="0" cellspacing="0" id="Table1" border="0" bordercolor="RED">
+                        <!-- Header bar starts --><!-- Header bar ends -->
+                        <!-- Menu bar starts --><!-- Menu bar ends -->
+                        <!-- Breadcrumb and Refer Friend area starts --><!-- Breadcrumb and Refer Friend area ends -->
+                        <!-- Main Content area starts -->
+                        <tr>
+                            <td colspan="3" align="center"><table><tr><td> 
+<p><script>var ary = new Array("Info", "ApplicationNotes", "Videos", "Products");var i = 0;var index = "Info";var urlParams = {};(function () {var e,a = /\+/g,r = /([^&=]+)=?([^&]*)/g,d = function (s) { return decodeURIComponent(s.replace(a, " ")); },q = window.location.search.substring(1);while (e = r.exec(q)){urlParams[d(e[1])] = d(e[2]);}})();function swapDiv(item){for (i=0; i<ary.length; i++){var l_name = ary[i]+"_n";if (ary[i] == item){document.getElementById(ary[i]).style.display = 'block';document.getElementById(l_name).style.backgroundColor='#ffc20e';index = item;}else {document.getElementById(ary[i]).style.display = 'none';document.getElementById(l_name).style.backgroundColor='#dde6ed';}}}function mouserOut(chase, item){if (index == chase){item.style.backgroundColor='#ffc20e';}else {item.style.backgroundColor='#dde6ed'; }}</script> </p>
+<p><link href="http://content.fluke.com/css/eustyles.css" rel="stylesheet" type="text/css" /> </p>
+<p></p>
+<table border="0" cellSpacing="0" cellPadding="0" width="970" bgColor="#000000" align="center">
+<tbody>
+<tr>
+<td bgColor="#000000"><img border="0" src="http://content.fluke.com/promotions/promo-multi/0535-PM-sol/970_Header.jpg" width="970" height="102"></td></tr>
+<tr>
+<td bgColor="#000000"><img border="0" src="http://content.fluke.com/solutions/preventive-maintenance/motor-drive-en-970-350.jpg" width="970" height="350"></td></tr></tbody></table>
+<table border="0" cellSpacing="0" cellPadding="0" width="970" bgColor="#ffc20e" align="center">
+<tbody>
+<tr>
+<td bgColor="#ffc20e" height="4" colSpan="5"></td></tr></tbody></table>
+<table cellSpacing="0" cellPadding="0" width="970" bgColor="#ffffff" align="center">
+<tbody>
+<tr></tr>
+<tr><!-- nav start -->
+<td vAlign="top" width="134">
+<table cellSpacing="5" cellPadding="5" width="134">
+<tbody>
+<tr>
+<td style="BACKGROUND-COLOR: #ffc20e; CURSOR: pointer; TEXT-DECORATION: none" id="Info_n" onmouseover="style.backgroundColor='#ffc20e'; this.style.cursor='pointer';" onmouseout="mouserOut('Info', this)" onclick="swapDiv('Info');" height="35" vAlign="center" width="134" align="middle"><span><strong>»</strong></span></td></tr>
+<tr>
+<td style="BACKGROUND-COLOR: #dde6ed; CURSOR: pointer; TEXT-DECORATION: none" id="ApplicationNotes_n" onmouseover="style.backgroundColor='#ffc20e'; this.style.cursor='pointer'" onmouseout="mouserOut('ApplicationNotes', this)" onclick="swapDiv('ApplicationNotes'); _gaq.push(['_trackEvent', 'Best-practices', 'click', 'PM-Practices']);" height="35" vAlign="center" width="134" align="middle"><span><strong>Best practices&nbsp;»</strong></span></td></tr>
+<tr>
+<td style="BACKGROUND-COLOR: #dde6ed; CURSOR: pointer; TEXT-DECORATION: none" id="Videos_n" onmouseover="style.backgroundColor='#ffc20e'; this.style.cursor='pointer';" onmouseout="mouserOut('Videos', this)" onclick="swapDiv('Videos'); _gaq.push(['_trackEvent', 'Video-testimonials', 'click', 'PM-Testimonials']); " height="35" vAlign="center" width="134" align="middle"><span><strong>Video testimonials &nbsp;»</strong></span></td></tr>
+<tr>
+<td style="BACKGROUND-COLOR: #dde6ed; CURSOR: pointer; TEXT-DECORATION: none" id="Products_n" onmouseover="style.backgroundColor='#ffc20e'; this.style.cursor='pointer';" onmouseout="mouserOut('Products', this)" onclick="swapDiv('Products'); _gaq.push(['_trackEvent', 'Recommended-products', 'click', 'PM-Recommended']); " height="35" vAlign="center" width="134" align="middle"><span><strong>Recommended products&nbsp;»</strong></span></td></tr>
+<tr>
+<td style="BACKGROUND-COLOR: #dde6ed; CURSOR: pointer; TEXT-DECORATION: none" id="Back_n" onmouseover="style.backgroundColor='#ffc20e'; this.style.cursor='pointer';" height="35" vAlign="center" width="134" align="middle"><span><strong><a style="COLOR: #000000; CURSOR: pointer; TEXT-DECORATION: none" href="../index/index-2.html?wbc_purpose=basic">«&nbsp;Back</a></strong></span></td></tr>
+<tr></tr>
+<tr></tr></tbody></table></td><!-- nav end -->
+<td id="divs" vAlign="top"><!-- Info -->
+<div style="PADDING-LEFT: 5px; DISPLAY: block; PADDING-TOP: 1px" id="Info">
+<h2>Always one step ahead! </h2>
+<p>Fluke is here to help you take on new challenges in industrial machinery, automation and process controls or power conversion electronics. </p>
+<p><a onclick="_gaq.push(['_trackEvent', 'MD-book', 'click', 'PM-MD-book']);" href="http://a.fluke.com/E-book-uken?lcid=CCBEAC20-8AA6-E211-AE56-A4BADB1DDEB4&amp;lls=200006&amp;lrpf=SCM&amp;lpid=bf532139-c207-e011-a1f1-0015c5fdf7e6&amp;llr=3&amp;plt=100000004&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11756-eng&amp;scl=137" target="_blank">Motor and Drive Troubleshooting: Basic Testing to Advanced Diagnostics</a> covers the fundamentals of using portable oscilloscopes to detect and analyse electric motor and drive problems that can cause system or process downtime. </p>
+<table border="0" cellSpacing="0" cellPadding="6" width="500">
+<tbody>
+<tr>
+<td width="250" align="left">
+<ul>
+<li>Motor and Drive Principles</li>
+<li>Safety and Test Measurements</li>
+<li>Troubleshooting Principles</li>
+<li>Motor and Drive Troubleshooting</li>
+<li>Documenting Motor and Drive Condition</li></ul>
+<p style="PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-FAMILY: 'Lucida Sans'; COLOR: #000000; FONT-SIZE: 16px; PADDING-TOP: 10px"><a style="PADDING-LEFT: 10px; FONT-FAMILY: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif" class="YellowButtonGradient" onclick="_gaq.push(['_trackEvent', 'MD-book', 'click', 'PM-MD-book']);" href="http://a.fluke.com/E-book-uken?lcid=CCBEAC20-8AA6-E211-AE56-A4BADB1DDEB4&amp;lls=200006&amp;lrpf=SCM&amp;lpid=bf532139-c207-e011-a1f1-0015c5fdf7e6&amp;llr=3&amp;plt=100000004&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11756-eng&amp;scl=137" target="_blank">Get&nbsp;a Free eBook </a></p></td>
+<td width="250"><a onclick="_gaq.push(['_trackEvent', 'MD-book', 'click', 'PM-MD-book']);" href="http://a.fluke.com/E-book-uken?lcid=CCBEAC20-8AA6-E211-AE56-A4BADB1DDEB4&amp;lls=200006&amp;lrpf=SCM&amp;lpid=bf532139-c207-e011-a1f1-0015c5fdf7e6&amp;llr=3&amp;plt=100000004&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11756-eng&amp;scl=137" target="_blank"><img border="0" src="http://content.fluke.com/solutions/preventive-maintenance/11756-eng-124-175.png"></a></td></tr></tbody></table></div><!--style="DISPLAY: none"--><!-- Best practices -->
+<div style="DISPLAY: none; PADDING-TOP: 1px" id="ApplicationNotes">
+<h2>Best practices</h2>
+<p>We at Fluke understand how much you are asked to do and how challenging staying up to date with your industry and tools can be. We have made a selection of Best practices to help you stay informed on how Fluke tools can support you in your field.</p>
+<table border="0" cellSpacing="0" cellPadding="5" width="530">
+<tbody>
+<tr>
+<td class="tableBody" width="70" align="middle">&nbsp;</td>
+<td class="tableBody" width="150">&nbsp;</td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" width="70" align="middle">&nbsp;</td>
+<td class="tableBody" width="150">&nbsp;</td></tr>
+<tr class="tablehead">
+<td class="tableBody" colSpan="5" align="left">
+<h3>Mechanical troubleshooting</h3></td></tr>
+<tr>
+<td class="tableBody" align="middle"><span class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=6549A90B-BC15-DF11-A94F-0015C5FDF7E6&amp;lpid=6ef9a3b9-f3af-e111-9283-a4badb1ddee8&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11907-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/7E3D77F4-3608-42D8-BC7A-14EEF635E8A9/0/b11907_tn.jpg" width="50" height="67"></a></span></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=6549A90B-BC15-DF11-A94F-0015C5FDF7E6&amp;lpid=6ef9a3b9-f3af-e111-9283-a4badb1ddee8&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11907-eng" target="_blank">Mechanical Troubleshooting with Fluke Vibration Tools&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle"><span class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=6549A90B-BC15-DF11-A94F-0015C5FDF7E6&amp;lpid=6ef9a3b9-f3af-e111-9283-a4badb1ddee8&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11609-eng" target="_blank"><img border="0" alt="" src="http://www.fluke.com/NR/rdonlyres/8BA1AC1F-F69F-4BFF-9BD0-9C9619A67581/0/b11609_tn.jpg" width="50" height="67"></a></span></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=6549A90B-BC15-DF11-A94F-0015C5FDF7E6&amp;lpid=6ef9a3b9-f3af-e111-9283-a4badb1ddee8&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11609-eng" target="_blank">Introduction to vibration&nbsp;»</a></td></tr>
+<tr class="tablehead">
+<td class="tableBody" colSpan="5" align="left">
+<h3>Motor failure</h3></td></tr>
+<tr>
+<td class="tableBody" align="middle"><span class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=c0818fb9-1e4d-e111-bb00-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11595-eng" target="_blank"><img border="0" alt="" src="http://www.fluke.com/NR/rdonlyres/47206A0B-2AE0-409B-8C18-8DC8586ACA22/0/b11595_tn.jpg" width="50" height="67"></a></span></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=c0818fb9-1e4d-e111-bb00-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11595-eng" target="_blank">Three phase motor failure&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle"><span class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=c0818fb9-1e4d-e111-bb00-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11593-eng" target="_blank"><img border="0" alt="" src="http://www.fluke.com/NR/rdonlyres/03E5FC50-6B09-4C29-AC7D-47A293C1A1E8/0/b11593_tn.jpg" width="50" height="67"></a></span></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=c0818fb9-1e4d-e111-bb00-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11593-eng" target="_blank">Machine shop motor failure&nbsp;»</a></td></tr>
+<tr class="tablehead">
+<td class="tableBody" colSpan="5" align="left">
+<h3>Power Quality</h3></td></tr>
+<tr>
+<td class="tableBody" align="middle"><span class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=306C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=d9ce94bf-5062-e111-99e2-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11600-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/B5FA99C2-31B6-42EA-9A00-F960F6819794/0/b11600_tn.jpg" width="50" height="67"></a></span></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=c0818fb9-1e4d-e111-bb00-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11600-eng" target="_blank">Basic power quality methodology and common culprits&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle"><span class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=c0818fb9-1e4d-e111-bb00-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11599-eng" target="_blank"><img border="0" alt="" src="http://www.fluke.com/NR/rdonlyres/9364027A-607A-4861-A6BA-32DAE210A573/0/b11599_tn.jpg" width="50" height="67"></a></span></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=c0818fb9-1e4d-e111-bb00-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11599-eng" target="_blank">PQ measurements at receptacle branch circuits&nbsp;» </a></td></tr>
+<tr class="tablehead">
+<td class="tableBody" colSpan="5" align="left">
+<h3>Electrical analysis </h3></td></tr>
+<tr>
+<td class="tableBody" align="middle"><span class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=c0818fb9-1e4d-e111-bb00-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11589-eng" target="_blank"><img border="0" alt="" src="http://www.fluke.com/NR/rdonlyres/7F08382C-2BEC-49A2-AF51-BC52E3BD05AD/0/b11589_tn.jpg" width="50" height="67"></a></span></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2E6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=c0818fb9-1e4d-e111-bb00-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11589-eng" target="_blank">Top 5 warning signs that you a have a hidden electrical problem&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle"><span class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=F624B332-3676-DE11-A28C-001E0B4616F4&amp;lpid=e968c18b-92e8-e011-9fd3-a4badb1ddeb4&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11615-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/660D2473-C31C-492E-87C0-89D0C79BE0B8/0/b11615_tn.jpg" width="50" height="67"></a></span></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=F624B332-3676-DE11-A28C-001E0B4616F4&amp;lpid=e968c18b-92e8-e011-9fd3-a4badb1ddeb4&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11615-eng" target="_blank">Better ways to troubleshoot automation and process control loops&nbsp;»</a></td></tr>
+<tr>
+<td class="tableBody" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11789-eng" target="_blank"><img border="0" alt="" src="http://www.fluke.com/NR/rdonlyres/123787F2-5FD9-43DD-AB46-33F900814916/0/b11789.jpg" width="50"></a></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11789-eng" target="_blank">Pulsewidth triggering&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10882-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/90BE77B0-2D50-48DD-B469-22C9F25F6E17/0/b10882.jpg" width="50"></a></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10882-eng" target="_blank">A first look at DSOs&nbsp;»</a></td></tr>
+<tr>
+<td class="tableBody" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10620-eng" target="_blank"><img border="0" alt="" src="http://www.fluke.com/NR/rdonlyres/BB9BF4A1-5E63-4041-8CD0-C6AE605195CF/0/b10620.jpg" width="50"></a></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10620-eng" target="_blank">Easy Capture InRush&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10668-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/90BE77B0-2D50-48DD-B469-22C9F25F6E17/0/b10882.jpg" width="50"></a></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10668-eng" target="_blank">Voltage Frequency Ratio&nbsp;»</a></td></tr>
+<tr>
+<td class="tableBody" align="middle">&nbsp;</td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11873-eng" target="_blank">Motor Shaft Voltage Bearing Currents&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=12014-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/90BE77B0-2D50-48DD-B469-22C9F25F6E17/0/b10882.jpg" width="50"></a></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=12014-eng" target="_blank">Troubleshooting Motors&nbsp;»</a></td></tr>
+<tr>
+<td class="tableBody" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11784-eng" target="_blank"><img border="0" alt="" src="http://www.fluke.com/NR/rdonlyres/4D580153-774C-46F8-8D05-E70BF633F33F/0/b11784.jpg" width="50"></a></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11784-eng" target="_blank">Demystifying drive anomalies&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2B6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=cbe776e9-601d-e211-8ddc-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11986-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/FBC5C37A-5B1A-47B6-81F8-60B4F5A9E5A2/0/b11986.jpg" width="50"></a></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2B6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=cbe776e9-601d-e211-8ddc-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11986-eng" target="_blank">CNX wireless system user study: Wedge Electric, Inc.&nbsp;»</a></td></tr>
+<tr>
+<td class="tableBody" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2B6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=cbe776e9-601d-e211-8ddc-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11983-eng" target="_blank"><img border="0" alt="" src="http://www.fluke.com/NR/rdonlyres/F1588798-BF7C-46FA-9B04-4BC8F152189A/0/b11983.jpg" width="50"></a></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2B6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=cbe776e9-601d-e211-8ddc-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11983-eng" target="_blank">CNX wireless system user study: Metropolitan Electric&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle">&nbsp;</td>
+<td class="tableBody">&nbsp;</td></tr>
+<tr class="tablehead">
+<td class="tableBody" colSpan="5" align="left">
+<h3>Temperature</h3></td></tr>
+<tr>
+<td class="tableBody" align="middle"><span class="tableBody"><a href="https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11969-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/95BB328B-2D49-4A9D-A253-A4ED0FD3C250/0/b11969_tn.jpg" width="50" height="39"></a></span></td>
+<td class="tableBody"><a href="https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11969-eng" target="_blank">Meet the VT02 Visual IR Thermometer&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle"><a href="https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10984-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/82DBC29F-DB91-4F4D-821C-92A133FC7B53/0/b10984.jpg" width="50" height="39"></a></td>
+<td class="tableBody"><a href="https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10984-eng" target="_blank">Detecting electrical unbalance and overloads&nbsp;»</a></td></tr>
+<tr>
+<td class="tableBody" align="middle"><a href="https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10987-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/30EB8D18-AC41-410A-9333-42DD63F843CD/0/b10987.jpg" width="50" height="39"></a></td>
+<td class="tableBody"><a href="https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=10987-eng" target="_blank">Electrical, insulation and thermal measurements for motors and drives&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle">&nbsp;</td>
+<td class="tableBody">&nbsp;</td></tr>
+<tr class="tablehead">
+<td class="tableBody" colSpan="5" align="left">
+<h3>HVAC Applications </h3></td></tr>
+<tr>
+<td class="tableBody" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2B6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=cbe776e9-601d-e211-8ddc-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11982-eng" target="_blank"><img border="0" src="http://www.fluke.com/NR/rdonlyres/352248A8-98A5-4268-ABD7-5523BC79863F/0/b11982.jpg" width="50" height="39"></a></td>
+<td class="tableBody"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=2B6C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=cbe776e9-601d-e211-8ddc-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=https://fluke.syncforce.com/Handlers/MarketingAssetHandler.ashx?ArticleNr=11982-eng" target="_blank">CNX wireless system user study: HVAC Applications&nbsp;»</a></td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle">&nbsp;</td>
+<td class="tableBody">&nbsp;</td></tr>
+<tr>
+<td class="tableBody" align="middle">&nbsp;</td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody">&nbsp;</td>
+<td class="tableBody" align="middle">&nbsp;</td>
+<td class="tableBody">&nbsp;</td></tr></tbody></table></div><!-- End best practices --><!--style="DISPLAY: none"--><!-- Videos -->
+<div style="DISPLAY: none; PADDING-TOP: 1px" id="Videos">
+<h2>Testimonial videos</h2>
+<h3>See what our customers say</h3>
+<p>Check out the videos below to hear how our test tools have helped other customers like you and to find out the benefits of our newest products. </p>
+<table cellSpacing="0" cellPadding="5" width="530">
+<tbody>
+<tr>
+<td class="tablebody" colSpan="5" align="left">&nbsp; </td></tr>
+<tr>
+<td class="tablebody" vAlign="top" width="75" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=http://youtu.be/mA6ekksBpWk"><img border="0" alt="Introductory video: Tips for troubleshooting motors and drives" src="http://www.fluke.com/NR/rdonlyres/5F7E3C82-82BF-4061-A904-5EAE05720D8F/0/videomd.jpg" width="70" height="39"></a></td>
+<td class="tablebody" vAlign="top" width="160"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=68BB9E41-3676-DE11-A28C-001E0B4616F4&amp;lpid=71813583-7fc3-e011-b2b0-a4badb1ddec7&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=http://youtu.be/mA6ekksBpWk">Introductory video: Tips for troubleshooting motors and drives&nbsp;»</a></td>
+<td class="tablebody" width="8">&nbsp;</td>
+<td class="tablebody" vAlign="top" width="75" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=6549A90B-BC15-DF11-A94F-0015C5FDF7E6&amp;lpid=6ef9a3b9-f3af-e111-9283-a4badb1ddee8&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=http://content.fluke.com/video/0475_805/805video_en.html" target="_blank"><img border="0" alt="805 vibration meter - user experience" src="http://www.fluke.com/NR/rdonlyres/213F56FC-B2D2-4E24-8044-6A0A078ACEAD/0/video805.jpg" width="70" height="39"></a></td>
+<td class="tablebody" vAlign="top" width="150"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=6549A90B-BC15-DF11-A94F-0015C5FDF7E6&amp;lpid=6ef9a3b9-f3af-e111-9283-a4badb1ddee8&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=http://content.fluke.com/video/0475_805/805video_en.html" target="_blank">805 vibration meter - user experience&nbsp;»</a><a href="javascript:PopItUp('http://download.fluke.com/video-TI/TI/4059588A_ti/EN/4102082A_EN.html',660,555)"></a></td></tr>
+<tr>
+<td class="tablebody" vAlign="top" width="75" align="middle"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=306C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=d9ce94bf-5062-e111-99e2-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=http://youtu.be/cJeVmfxaQPs" target="_blank"><img border="0" alt="TI Video: Waverail" src="http://www.fluke.com/NR/rdonlyres/9A9EB1EB-5637-4A52-AF8F-A6817F3334E7/0/videowaverail.jpg" width="70" height="39"></a></td>
+<td class="tablebody" vAlign="top" width="160"><a href="http://a.fluke.com/IG-EU-MULTI-2013-GATE-UKEN-LP-PROGRESSIVEMV?lcid=A6C1CA01-2487-E211-AE56-A4BADB1DDEB4&amp;lls=200013&amp;lrpf=306C4BD2-C170-DE11-95B8-02BF0A064B97&amp;lpid=d9ce94bf-5062-e111-99e2-bc305b2a7226&amp;llr=3&amp;plt=100000004&amp;scl=1093&amp;elqstat=1&amp;emlsubgrp=34&amp;redir=http://youtu.be/cJeVmfxaQPs" target="_blank">Ti video: Waverail&nbsp;»</a></td>
+<td class="tablebody" width="8">&nbsp;</td>
+<td class="tablebody" vAlign="top" width="75" align="middle"><a href="http://content.fluke.com/video/0475_805/805video_en.html" target="_blank"></a><a href="http://www.youtube.com/watch?v=jbn6fxKJJLE" target="_blank"><img border="0" alt="62 MAX" src="http://www.fluke.com/NR/rdonlyres/3FFB4D28-5893-476A-8040-9544231E9E98/0/video62max.jpg" width="70" height="39"></a></td>
+<td class="tablebody" vAlign="top" width="150"><a href="http://www.youtube.com/watch?v=jbn6fxKJJLE" target="_blank">62 max video&nbsp;»</a></td></tr>
+<tr>
+<td class="tablebody" vAlign="top" width="75" align="middle"><a href="http://content.fluke.com/video/0517_VT02/VT02_video_en.html" target="_blank"><img border="0" alt="Fluke VT02 Video" src="http://www.fluke.com/NR/rdonlyres/0C2DCA55-3FBE-480D-B043-FA69C3B3936D/0/videovt02.jpg" width="70" height="39"></a></td>
+<td class="tablebody" vAlign="top" width="160"><a href="http://content.fluke.com/video/0517_VT02/VT02_video_en.html" target="_blank">VT02 video: See beyond temperature&nbsp;»</a></td>
+<td class="tablebody" width="8">&nbsp;</td>
+<td class="tablebody" vAlign="top" width="75" align="middle">&nbsp;</td>
+<td class="tablebody" vAlign="top" width="150">&nbsp; </td></tr>
+<tr>
+<td colSpan="5">&nbsp;</td></tr></tbody></table></div><!-- End video's --><!--style="DISPLAY: none"--><!-- Products -->
+<div style="DISPLAY: none; PADDING-TOP: 1px" id="Products">
+<h2>Products</h2>
+<p>Find out which products suit your troubleshooting needs best. Meet below our top troubleshooters that allow you to simultaneously track down the root cause of your most complex troubleshooting challenges.</p>
+<table border="0" cellSpacing="0" cellPadding="5" width="530">
+<tbody>
+<tr align="middle">
+<td class="tablebody" width="80" colSpan="5">&nbsp;</td></tr>
+<tr>
+<td class="tablebody" vAlign="top" width="80" align="middle"><a href="http://content.fluke.com/comx/video-PTOOL/75x_en/75xvideo_en/pcal_750_videos.html" target="_blank"><img border="0" alt="Fluke 1750 Three-Phase Power Quality Recorder" src="http://www.fluke.com/NR/rdonlyres/7AC6C163-4FA5-4F04-B653-DB11A543D43D/0/F1750_01c_69p.gif"></a></td>
+<td class="tablebody" vAlign="top" width="155"><a href="../../../Power-Quality-Tools/Logging-Power-Meters/Fluke-1750/index-2.html?PID=56030">Fluke 1750 Three-Phase Power Recorder&nbsp;»</a></td>
+<td class="tablebody" width="8">&nbsp;</td>
+<td class="tablebody" vAlign="top" width="80" align="middle"><img alt="Ti105" src="http://www.fluke.com/NR/rdonlyres/41B67B54-EBC8-40E1-8FF2-65BEA0E6FF35/0/Ti105_tn_75px_x_84px.png"></td>
+<td class="tablebody" vAlign="top" width="155"><a href="../../../Thermal-Cameras/Ti105/index.html?PID=74966">Ti105 Thermal Imager for Industrial and Commercial Applications&nbsp;»</a></td></tr>
+<tr>
+<td class="tablebody" vAlign="top" width="80" align="middle"><img alt="170 Series" src="http://assets.fluke.com/images/Products/DMM/170series/179_tn_75px_x_84px.png"></td>
+<td class="tablebody" vAlign="top" width="155"><a href="../../../digital-multimeters/Fluke-170/index-2.html?PID=56027">Fluke 170 Series Digital Multimeters&nbsp;»</a><a title="Vibration Tester" href="../../../Vibration/Fluke-810/index.html?PID=56137"></a></td>
+<td class="tablebody" width="8">&nbsp;</td>
+<td class="tablebody" vAlign="top" width="80" align="middle"><img alt="Fluke 289 True-rms Industrial Logging Multimeter with TrendCapture" src="http://www.fluke.com/NR/rdonlyres/85517439-0C08-485B-A5A2-782C94A07899/0/F289_17b_69p.gif"></td>
+<td class="tablebody" vAlign="top" width="155"><a href="../../../digital-multimeters/Advanced-Multimeters/Fluke-289/index.html?PID=56061">Fluke 289 True-rms Industrial Logging Multimeter with TrendCapture&nbsp;»</a><a href="../../../Vibration-Testers/Fluke-805-Vibration-Meter/index.html?PID=74298"></a></td></tr>
+<tr>
+<td class="tablebody" vAlign="top" width="80" align="middle"><img alt="810" src="http://www.fluke.com/NR/rdonlyres/1CA08D91-9E56-4A8C-A49D-508FBA6214AD/0/F810_01a_69px.gif"></td>
+<td class="tablebody" vAlign="top" width="155"><a title="Vibration Tester" href="../../../Vibration/Fluke-810/index.html?PID=56137">Fluke 810 Vibration Tester&nbsp;»</a></td>
+<td class="tablebody" width="8">&nbsp;</td>
+<td class="tablebody" vAlign="top" width="80" align="middle"><a href="http://content.fluke.com/comx/video-PTOOL/75x_en/75xvideo_en/pcal_750_videos.html" target="_blank"><img border="0" alt="805" src="http://assets.fluke.com/images/Products/Vibration/F-805_01a_75px_x_75px.jpg"></a></td>
+<td class="tablebody" vAlign="top" width="155"><a href="../../../Vibration-Testers/Fluke-805-Vibration-Meter/index.html?PID=74298">Fluke 805 Vibration Meter&nbsp;»</a>&nbsp;</td></tr>
+<tr>
+<td class="tablebody" vAlign="top" align="middle"><img alt="Fluke CNX 3000 General Maintenance System" src="http://www.fluke.com/NR/rdonlyres/D01348BB-5184-4B01-AEB9-A2DC7948B225/0/Fcnx3000general_01c_c_70px_x_70px.png"></td>
+<td class="tablebody" vAlign="top"><a href="../../../products/fluke-connect/index-3.html">CNX wireless system »</a></td>
+<td class="tablebody">&nbsp;</td>
+<td class="tablebody" vAlign="top" align="middle">&nbsp;</td>
+<td class="tablebody" vAlign="top">&nbsp;</td></tr></tbody></table></div><!-- End products --></td></tr></tbody></table>
+<table cellSpacing="0" cellPadding="0" width="970" align="center">
+<tbody>
+<tr></tr>
+<tr bgColor="#ffffff">
+<td colSpan="2"><iframe  src="http://content.fluke.com/footers/genericfooter_uken.html" width="970" height="40" frameborder="0" scrolling="no"></iframe></td></tr></tbody></table></td></tr></table></td>
+                        </tr>
+                        <!-- Main Content area ends -->
+                    </table>
+                </td>
+            </tr>
+            
+        
+            <!-- Meta data placeholders area starts --><!-- Meta data placeholders area ends -->
+            
+        </table>
+        <!-- Site Catalyst area starts -->
+        
+<SCRIPT language="JavaScript">var s_account="flukeuk-PROD"</script>
+<!-- SiteCatalyst code version: H.0. Copyright 1997-2005 Omniture, Inc. More
+ info available at http://www.omniture.com -->
+<script language="JavaScript" src="http://www.fluke.com/Fluke_www/js_scripts/s_code.js"></script>
+<script language="JavaScript"><!--
+  s.pageName="fluke/uken/solutions/Preventive-maintenance/motor-drive";
+  s.channel="uken";
+  s.hier1="fluke,uken,solutions,Preventive-maintenance,motor-drive";
+var OmniUserGUID;
+function readCookie(c_name) {
+var c_start,c_end;
+if (document.cookie.length>0)
+{
+c_start=document.cookie.indexOf(c_name + '=');
+if (c_start!=-1)
+{
+c_start=c_start + c_name.length+1;
+c_end=document.cookie.indexOf(';',c_start);
+if (c_end==-1) c_end=document.cookie.length;
+return unescape(document.cookie.substring(c_start,c_end));
+}
+}
+return '';
+}
+function setCookie(name,value,days)
+{
+if (days)
+{
+var date = new Date();
+date.setTime(date.getTime()+(days*24*60*60*1000));
+var expires = '; expires='+date.toGMTString();
+}
+else var expires = '';
+document.cookie = name+'='+value+expires+'; path=/; domain=.fluke.com';
+}
+var UserCookie=readCookie('FlukeUserGUID');
+if (UserCookie== null ||UserCookie=='') {
+OmniUserGUID='4c2803c4-9d9a-443b-b243-0cd7484d7920';
+setCookie('FlukeUserGUID',OmniUserGUID,7300);
+}
+else
+OmniUserGUID = UserCookie;
+s.events='event6';
+s.prop8=OmniUserGUID;
+s.prop10='6/7/2017 11:20:25 AM';
+s.eVar8=OmniUserGUID;
+s.eVar10='6/7/2017 11:20:25 AM';
+s.linkTrackVars='eVar8';
+setCookie('FlukeUserGUID',OmniUserGUID,7300);
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf("MSIE")>=0)document.write(unescape("%3C")+"\!-"+"-")//--></script><noscript><img src="http://flukeuk-prod.122.2o7.net/b/ss/flukeuk-PROD/1/H.0--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.0. -->
+
+        <!-- Site Catalyst area ends -->
+        
+
+        
+    
+
+<!-- Generated by Microsoft.ContentManagement.WebControls.Console to reset form.action -->
+<SCRIPT type="text/javascript">
+<!--
+
+    var __CMS_PostbackFormBeenReset = false;
+
+    function __cmsRestFormAction()
+    {
+        if ( !__CMS_PostbackFormBeenReset )
+        {
+            // set form postback Url to be current translated CMS Url
+            __CMS_PostbackForm.action = __CMS_CurrentUrl;
+        }
+    }
+
+    var __cmsResetFormCachedPostBack = null;
+    if( typeof window.__doPostBack != "undefined" )
+    {
+        __cmsResetFormCachedPostBack = __doPostBack;
+        __doPostBack = __cmsResetFormOverridePostBack;
+    }
+
+    var __cmsResetFormCachedOnSubmit = null;
+    if( typeof __CMS_PostbackForm.onsubmit != "undefined" )
+    {
+        __cmsResetFormCachedOnSubmit = __CMS_PostbackForm.onsubmit;
+        __CMS_PostbackForm.onsubmit = __cmsResetFormOverrideOnSubmit;
+    }
+    else
+    {
+        __cmsResetFormCachedOnSubmit = null;
+        __CMS_PostbackForm.onsubmit = __cmsResetFormOverrideOnSubmit;
+    }
+
+    function __cmsResetFormOverridePostBack( eventTarget, eventArgument )
+    {
+        __cmsRestFormAction();
+        __cmsResetFormCachedPostBack( eventTarget, eventArgument );
+    }
+
+    function __cmsResetFormOverrideOnSubmit()
+    {
+        __cmsRestFormAction();
+        if (__cmsResetFormCachedOnSubmit != null)
+            return __cmsResetFormCachedOnSubmit();
+        else
+            return true;
+    }
+// -->
+</SCRIPT>
+
+
+</form>
+    <!-- Live person chat area starts -->
+    <script type="text/javascript" charset="UTF-8" src="https://server.iad.liveperson.net/hc/17387962/?cmd=mTagRepstate&amp;site=17387962&amp;buttonID=12&amp;divID=lpButDivID-1264167944685&amp;bt=1&amp;c=1"></script>
+    <!-- Live person chat area ends -->
+    
+    <!-- BEGIN LivePerson Monitor. -->
+ <script language='javascript'>
+ var lpMTagConfig = {'lpServer' : "server.iad.liveperson.net",'lpNumber' : "17387962",'lpProtocol' : "https"};
+ function lpAddMonitorTag(src)
+ {if(typeof(src)=='undefined'||typeof(src)=='object')
+ {src=lpMTagConfig.lpMTagSrc?lpMTagConfig.lpMTagSrc:'/hcp/html/mTag.js';}
+ if(src.indexOf('http')!=0)
+ {src=lpMTagConfig.lpProtocol+"://"+lpMTagConfig.lpServer+src+'?site='+lpMTagConfig.lpNumber;}
+ else{if(src.indexOf('site=')<0)
+ {if(src.indexOf('?')<0)src=src+'?';
+ else src=src+'&';src=src+'site='+lpMTagConfig.lpNumber;}};
+ var s=document.createElement('script');
+ s.setAttribute('type','text/javascript');
+ s.setAttribute('charset','iso-8859-1');
+ s.setAttribute('src',src);
+ document.getElementsByTagName('head').item(0).appendChild(s);}
+ if (window.attachEvent) window.attachEvent('onload',lpAddMonitorTag);
+ else window.addEventListener("load",lpAddMonitorTag,false);
+ </script>
+ <!-- END LivePerson Monitor. -->    
+    
+    <!-- BEGIN Monitor Tracking Variables --> 
+    <script language="JavaScript1.2"> 
+        if (typeof(lpMTagConfig.sessionVar) == "undefined")
+        { 
+            lpMTagConfig.sessionVar = new Array();
+        }
+        lpMTagConfig.sessionVar[lpMTagConfig.sessionVar.length] = 'skill=Sales'; 
+    </script> 
+    <!-- End Monitor Tracking Variables -->     
+     <!-- Advertiser 'Fluke Electronics',  Include user in segment 'Clamps UK Retargeting Pixel' - DO NOT MODIFY THIS PIXEL IN ANY WAY -->
+<img src="http://ads.bluelithium.com/pixel?id=1052350&amp;t=2" width="1" height="1" />
+<!-- End of segment tag -->
+<!-- Advertiser 'Fluke Electronics',  Include user in segment 'Difference UK Retargeting Pixel' - DO NOT MODIFY THIS PIXEL IN ANY WAY -->
+<img src="http://ads.bluelithium.com/pixel?id=1052357&amp;t=2" width="1" height="1" />
+<!-- End of segment tag -->
+
+
+    <!-- Google Code for PPC Fluke TI Home Page Remarketing List -->
+    <!-- Google-code voor remarketingtag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 993804868;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/993804868/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+    
+</body>
+
+<!-- Mirrored from www.fluke.com/fluke/uken/solutions/Preventive-maintenance/motor-drive.htm?wbc_purpose=basic by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Jun 2017 18:30:42 GMT -->
+</html>
